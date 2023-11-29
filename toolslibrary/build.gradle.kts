@@ -32,19 +32,19 @@ publishing{
     }
 }
 
-gradlePlugin {
-    website.set(extra["PUBLISH_URL"] as String)
-    vcsUrl.set(extra["PUBLISH_URL"] as String)
-    plugins {
-        create("InspirationAppPlugin") {
-            id = "com.github.shahbaz213.toolslibrary"
-            implementationClass = "com.app.toolslibrary.plugin.toolslibrary"
-            displayName = "LokaleNow Android Plugin"
-            description = "Android gradle plugin for app's localization"
-            tags.set(listOf("android", "locale","string"))
-        }
-    }
-}
+//gradlePlugin {
+//    website.set(extra["PUBLISH_URL"] as String)
+//    vcsUrl.set(extra["PUBLISH_URL"] as String)
+//    plugins {
+//        create("InspirationAppPlugin") {
+//            id = "com.github.shahbaz213.toolslibrary"
+//            implementationClass = "com.app.toolslibrary.plugin.toolslibrary"
+//            displayName = "Tools Android Library"
+//            description = "Android gradle plugin for app's localization"
+//            tags.set(listOf("android", "locale","string"))
+//        }
+//    }
+//}
 
 //afterEvaluate {
 //    publishing {
